@@ -10,40 +10,53 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        
-        Button buttonVolleyActivity = (Button) findViewById(R.id.buttonVolleyActivity);
-        buttonVolleyActivity.setOnClickListener(new OnClickListener() {
-			
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+
+		Button buttonVolleyActivity = (Button) findViewById(R.id.buttonVolleyActivity);
+		buttonVolleyActivity.setOnClickListener(new OnClickListener() {
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent i = new Intent(getApplicationContext(), VolleyActivity.class);
+				Intent i = new Intent(getApplicationContext(),
+						VolleyActivity.class);
 				startActivity(i);
 			}
 		});
-        
-        Button buttonAsyncTaskActivity = (Button) findViewById(R.id.buttonAsyncTaskActivity);
-        buttonAsyncTaskActivity.setOnClickListener(new OnClickListener() {
-			
+
+		Button buttonAsyncTaskActivity = (Button) findViewById(R.id.buttonAsyncTaskActivity);
+		buttonAsyncTaskActivity.setOnClickListener(new OnClickListener() {
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent i = new Intent(getApplicationContext(), AsyncTaskActivity.class);
+				Intent i = new Intent(getApplicationContext(),
+						AsyncTaskActivity.class);
 				startActivity(i);
 			}
 		});
-    }
 
+		Button buttonServiceActivity = (Button) findViewById(R.id.buttonServiceActivity);
+		buttonServiceActivity.setOnClickListener(new OnClickListener() {
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-    
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent i = new Intent(getApplicationContext(),
+						ServiceActivity.class);
+				startActivity(i);
+			}
+		});
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
 }

@@ -11,5 +11,8 @@
     <string name="button_demo_async_task">Async Task</string>
     <string name="text_using_async_task">Download using Async Task</string>
     <string name="text_cancel">Cancel</string>
+    <string name="title_activity_service">Download Service</string>
+    <string name="button_demo_service">Android Service</string>
+    <string name="text_using_service">Using Service</string>
 
 </resources>

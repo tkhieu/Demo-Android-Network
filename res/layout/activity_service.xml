@@ -6,37 +6,46 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+    tools:context=".ServiceActivity" >
 
     <Button
-        android:id="@+id/buttonVolleyActivity"
+        android:id="@+id/buttonDownloadUsingService"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="20dp"
-        android:text="@string/button_demo_volley" />
+        android:text="@string/text_using_service" />
 
-    <Button
-        android:id="@+id/buttonAsyncTaskActivity"
-        style="?android:attr/buttonStyleSmall"
+    <ProgressBar
+        android:id="@+id/progressBarService"
+        style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/buttonVolleyActivity"
-        android:text="@string/button_demo_async_task" />
+        android:layout_below="@+id/buttonDownloadUsingService" />
+
+    <TextView
+        android:id="@+id/textViewProgressSerice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/progressBarService"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/progressBarService"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <Button
-        android:id="@+id/buttonServiceActivity"
+        android:id="@+id/buttonCancelService"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/buttonAsyncTaskActivity"
+        android:layout_alignLeft="@+id/textViewProgressSerice"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/buttonAsyncTaskActivity"
-        android:text="@string/button_demo_service" />
+        android:layout_below="@+id/textViewProgressSerice"
+        android:text="@string/text_cancel" />
 
 </RelativeLayout>
