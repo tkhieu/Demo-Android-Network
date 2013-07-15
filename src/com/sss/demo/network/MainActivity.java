@@ -50,6 +50,17 @@ public class MainActivity extends Activity {
 				startActivity(i);
 			}
 		});
+		
+		Button buttonGroundyActivity = (Button) findViewById(R.id.buttonGroundyAcitivity);
+		buttonGroundyActivity.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent i = new Intent(getApplicationContext(), GroundyActivity.class);
+				startActivity(i);
+			}
+		});
 	}
 
 	@Override

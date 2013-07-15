@@ -46,7 +46,6 @@ public class ServiceActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				u
 				stopService(intent);
 				Toast.makeText(getApplicationContext(), "Stopping", Toast.LENGTH_LONG).show();
 			}
