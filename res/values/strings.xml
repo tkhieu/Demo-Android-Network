@@ -14,5 +14,10 @@
     <string name="title_activity_service">Download Service</string>
     <string name="button_demo_service">Android Service</string>
     <string name="text_using_service">Using Service</string>
+    <string name="title_activity_groundy">Groundy Library</string>
+    <string name="button_demo_groundy">Groundy</string>
+    <string name="download_url">http://goo.gl/hQyDu</string>
+    <string name="start_download">Start download</string>
+    <string name="file_downloaded">File downloaded</string>
 
 </resources>

@@ -57,7 +57,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent i = new Intent(getApplicationContext(), GroundyActivity.class);
+				Intent i = new Intent(getApplicationContext(), DownloadExample.class);
 				startActivity(i);
 			}
 		});

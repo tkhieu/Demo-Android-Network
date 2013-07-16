@@ -41,6 +41,11 @@
             android:name="com.sss.demo.network.ServiceActivity"
             android:label="@string/title_activity_service" >
         </activity>
+        <activity
+            android:name="DownloadExample"
+            android:label="@string/title_activity_groundy" >
+        </activity>
+        <service android:name="com.telly.groundy.GroundyService"></service>
     </application>
 
 </manifest>

@@ -39,4 +39,14 @@
         android:layout_below="@+id/buttonAsyncTaskActivity"
         android:text="@string/button_demo_service" />
 
+    <Button
+        android:id="@+id/buttonGroundyAcitivity"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonServiceActivity"
+        android:layout_alignRight="@+id/buttonServiceActivity"
+        android:layout_below="@+id/buttonServiceActivity"
+        android:text="Groundy" />
+
 </RelativeLayout>
